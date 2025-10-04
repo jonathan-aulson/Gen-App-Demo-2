@@ -1,113 +1,77 @@
 {
-  "app_name": "Personal Portfolio Website",
-  "description": "A responsive web application that showcases a professional portfolio, introducing the individual, their work, and providing an easy way for visitors to get in touch.",
-  "features": [
-    "Hero section with name, tagline, and call-to-action",
-    "About Me section with biography and skills overview",
-    "Projects gallery with images, descriptions, and links to demos or repositories",
-    "Contact form with validation and email integration",
-    "Responsive design for mobile, tablet, and desktop",
-    "Smooth scrolling and navigation menu",
-    "SEO-friendly metadata and structure"
-  ],
-  "pages": {
-    "Home": {
-      "sections": [
-        "Hero Section",
-        "Navigation Bar"
-      ]
-    },
-    "About": {
-      "sections": [
-        "Profile Overview",
-        "Skills and Experience"
-      ]
-    },
-    "Projects": {
-      "sections": [
-        "Gallery of Featured Projects",
-        "Project Details Modal or Links"
-      ]
-    },
-    "Contact": {
-      "sections": [
-        "Contact Form",
-        "Social Media Links"
-      ]
-    }
-  },
-  "design": {
-    "style": "Modern, minimalistic, and clean",
-    "color_palette": [
-      "#222222",
-      "#ffffff",
-      "#007acc",
-      "#f5f5f5"
+  "app_name": "BookHaven",
+  "description": "An e-commerce web application that allows users to browse, search, and purchase books online with personalized recommendations and secure checkout.",
+  "features": {
+    "browsing_and_search": [
+      "Search bar with filters (genre, author, price, rating)",
+      "Category browsing (fiction, non-fiction, academic, etc.)",
+      "Sorting by popularity, release date, or price"
     ],
-    "typography": {
-      "primary_font": "Poppins, sans-serif",
-      "secondary_font": "Roboto, sans-serif"
-    },
-    "layout": "Single-page or multi-section scroll layout with consistent spacing and visual hierarchy"
-  },
-  "tech_stack": {
-    "frontend": [
-      "HTML5",
-      "CSS3",
-      "JavaScript",
-      "React or Next.js"
+    "user_accounts": [
+      "User registration and login",
+      "Profile management (addresses, payment methods)",
+      "Order history and wishlists"
     ],
-    "backend": [
-      "Node.js with Express (optional, for contact form handling)"
+    "shopping_cart_and_checkout": [
+      "Add/remove/update items in the cart",
+      "Discount code and promotions",
+      "Secure payment gateway integration (Stripe, PayPal)",
+      "Order confirmation and invoice generation"
     ],
-    "database": [
-      "None or lightweight NoSQL (e.g., MongoDB if saving messages)"
+    "book_detail_page": [
+      "Book cover, title, author, price, description",
+      "Average rating and customer reviews",
+      "Related/recommended books"
     ],
-    "deployment": [
-      "Vercel",
-      "Netlify",
-      "GitHub Pages"
+    "reviews_and_ratings": [
+      "User-submitted reviews",
+      "Star-based rating system",
+      "Moderation/admin approval for reviews"
     ],
-    "tools": [
-      "Git",
-      "Figma for UI design",
-      "EmailJS or Nodemailer for form submission"
+    "admin_dashboard": [
+      "Manage inventory (add/edit/delete books)",
+      "View and process orders",
+      "Manage users and promotions",
+      "Analytics for sales and traffic"
     ]
   },
-  "content": {
-    "hero": {
-      "headline": "Hi, I'm [Your Name]",
-      "subheadline": "A [Your Role or Profession]",
-      "cta": "View My Work"
+  "pages": [
+    "Home",
+    "Catalog/Search Results",
+    "Book Detail",
+    "Cart",
+    "Checkout",
+    "User Account",
+    "Order History",
+    "Admin Dashboard",
+    "About",
+    "Contact"
+  ],
+  "design": {
+    "style": "Modern, clean, and responsive design with a focus on readability and easy navigation.",
+    "color_scheme": "Neutral background with accent colors (e.g., navy and gold) for highlights.",
+    "layout": "Grid-based layout for book listings, card-style components, sticky navigation bar, and responsive mobile adaptation."
+  },
+  "tech_stack": {
+    "frontend": {
+      "framework": "React or Next.js",
+      "styling": "Tailwind CSS or Material UI",
+      "state_management": "Redux Toolkit or Context API"
     },
-    "about": {
-      "bio": "Brief professional introduction highlighting background, experience, and interests.",
-      "skills": [
-        "Web Development",
-        "UI/UX Design",
-        "JavaScript",
-        "React"
-      ]
+    "backend": {
+      "language": "Node.js (Express.js)",
+      "database": "PostgreSQL or MongoDB",
+      "authentication": "JWT-based authentication with OAuth option"
     },
-    "projects": [
-      {
-        "title": "Project One",
-        "description": "Short summary of the project, tools used, and your role.",
-        "link": "#"
-      },
-      {
-        "title": "Project Two",
-        "description": "Short summary of the project, tools used, and your role.",
-        "link": "#"
-      }
-    ],
-    "contact": {
-      "instructions": "Visitors can reach out using the form or social links.",
-      "fields": [
-        "Name",
-        "Email",
-        "Message"
-      ]
+    "infrastructure": {
+      "deployment": "Docker containers on AWS or Vercel",
+      "cdn": "CloudFront or similar",
+      "payment_gateway": "Stripe or PayPal integration"
     }
+  },
+  "content": {
+    "book_data": "Title, author, ISBN, price, description, cover image, category, stock quantity, and rating.",
+    "user_data": "Name, email, address, order history, preferences.",
+    "marketing_content": "Featured books, promotions, banners, newsletters."
   }
 }

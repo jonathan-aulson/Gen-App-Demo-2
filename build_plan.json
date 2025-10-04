@@ -1,162 +1,265 @@
 [
   {
     "id": 1,
-    "title": "Project Setup",
-    "description": "Initialize the project structure using basic HTML, CSS, and JavaScript. Create folders for assets (images, CSS, JS) and pages if needed.",
+    "title": "Initialize React + TypeScript project with Vite",
+    "description": "Set up the base project structure using React with TypeScript via Vite. Include ESLint, Prettier, and environment variable configuration (.env).",
     "acceptance_criteria": [
-      "Project root contains index.html, /css, /js, and /images directories",
-      "Basic HTML boilerplate is set up in index.html",
-      "All assets and scripts are correctly linked"
+      "Project created with Vite using React + TypeScript template",
+      "index.html located at the root",
+      "src/ directory contains main.tsx and App.tsx",
+      "ESLint and Prettier configured with standard rules",
+      "Environment variables loaded from .env file"
     ],
     "status": "completed",
-    "completed_at": "2025-10-03 22:47:17"
+    "completed_at": "2025-10-04 00:04:59"
   },
   {
     "id": 2,
-    "title": "Design Planning",
-    "description": "Design layout and visual hierarchy based on provided color palette, typography, and modern minimalistic style.",
+    "title": "Set up project structure and routing",
+    "description": "Establish core directory layout and implement client-side routing with React Router.",
     "acceptance_criteria": [
-      "Figma or wireframe mockup created for all sections",
-      "Color palette (#222222, #ffffff, #007acc, #f5f5f5) applied consistently",
-      "Fonts Poppins and Roboto imported via Google Fonts",
-      "Consistent spacing, clean layout, and clear visual hierarchy established"
+      "Folders created: components, pages, hooks, utils, services, store, assets",
+      "React Router installed and configured with BrowserRouter",
+      "Routes defined for Home, Catalog, Book Detail, Cart, Checkout, User Account, Order History, Admin Dashboard, About, and Contact pages",
+      "Navigation bar with links to primary sections implemented"
     ],
     "status": "completed",
-    "completed_at": "2025-10-03 22:47:34"
+    "completed_at": "2025-10-04 00:05:14"
   },
   {
     "id": 3,
-    "title": "Navigation Bar Implementation",
-    "description": "Create a responsive navigation bar with links to Home, About, Projects, and Contact sections. Implement smooth scrolling behavior.",
+    "title": "Implement global state management",
+    "description": "Configure Redux Toolkit for global state management to handle authentication, cart, and UI states.",
     "acceptance_criteria": [
-      "Navigation links scroll smoothly to their respective sections",
-      "Navbar remains visible and styled consistently across all viewports",
-      "Active section highlighting implemented"
+      "Redux Toolkit and React-Redux installed",
+      "Slices created for user, cart, and books",
+      "Store configured and provided to the app",
+      "State persists across page reloads using redux-persist"
     ],
     "status": "completed",
-    "completed_at": "2025-10-03 22:47:47"
+    "completed_at": "2025-10-04 00:05:24"
   },
   {
     "id": 4,
-    "title": "Hero Section Development",
-    "description": "Implement a hero section introducing the individual with a name, tagline, and call-to-action button.",
+    "title": "Design and theme setup",
+    "description": "Apply responsive design with Tailwind CSS using a modern, clean style and color scheme (neutral background with navy and gold accents).",
     "acceptance_criteria": [
-      "Displays headline, subheadline, and CTA button",
-      "CTA smoothly scrolls to Projects section",
-      "Content centered vertically and horizontally with modern layout"
+      "Tailwind CSS installed and configured with custom color palette",
+      "Global styles and typography applied",
+      "Base layout includes sticky navigation bar and responsive grid system",
+      "Mobile, tablet, and desktop breakpoints verified"
     ],
     "status": "completed",
-    "completed_at": "2025-10-03 22:47:57"
+    "completed_at": "2025-10-04 00:05:39"
   },
   {
     "id": 5,
-    "title": "About Section Development",
-    "description": "Build the About section containing a professional bio and a list of key skills.",
+    "title": "Build Home Page",
+    "description": "Create the homepage featuring highlighted and recommended books, banners, and quick navigation links.",
     "acceptance_criteria": [
-      "Includes short bio paragraph and skills list styled with icons or badges",
-      "Responsive layout for mobile and desktop",
-      "Readability and consistent typography maintained"
+      "Display featured books fetched from API",
+      "Responsive banner component included",
+      "Link to Catalog and other key sections present",
+      "Performance optimized for fast initial load"
     ],
     "status": "completed",
-    "completed_at": "2025-10-03 22:48:09"
+    "completed_at": "2025-10-04 00:05:49"
   },
   {
     "id": 6,
-    "title": "Projects Section Development",
-    "description": "Develop a gallery of featured projects with titles, descriptions, and links to demos or repositories.",
+    "title": "Implement Catalog/Search Results Page",
+    "description": "Develop the catalog page allowing users to browse and search books with filters and sorting options.",
     "acceptance_criteria": [
-      "Grid or card layout displays all project entries",
-      "Hover effects reveal additional project info or actions",
-      "Links open in new tabs and are accessible",
-      "Consistent spacing and alignment across items"
+      "Search bar with filters for genre, author, price, and rating",
+      "Sorting options (popularity, release date, price)",
+      "Pagination or infinite scroll implemented",
+      "Responsive grid layout for book cards"
     ],
     "status": "completed",
-    "completed_at": "2025-10-03 22:48:23"
+    "completed_at": "2025-10-04 00:06:00"
   },
   {
     "id": 7,
-    "title": "Contact Section Development",
-    "description": "Implement a contact form with name, email, and message fields. Include validation and email integration using EmailJS or similar.",
+    "title": "Build Book Detail Page",
+    "description": "Display detailed information about a specific book with reviews, ratings, and related book suggestions.",
     "acceptance_criteria": [
-      "Form fields include placeholders and validation (required fields, email format)",
-      "Form submission triggers EmailJS or a mock handler",
-      "Success and error messages displayed to the user",
-      "Social media links added below form"
+      "Book cover, title, author, price, and description displayed",
+      "Average rating and customer reviews shown",
+      "Add to Cart button functional",
+      "Related/recommended books shown below details"
     ],
     "status": "completed",
-    "completed_at": "2025-10-03 22:48:36"
+    "completed_at": "2025-10-04 00:06:12"
   },
   {
     "id": 8,
-    "title": "Responsive Design Implementation",
-    "description": "Enhance all sections for responsiveness across mobile, tablet, and desktop devices.",
+    "title": "Implement User Authentication",
+    "description": "Allow users to register, log in, and manage sessions via JWT-based authentication.",
     "acceptance_criteria": [
-      "All layouts adjust gracefully to viewport width changes",
-      "Navigation collapses or adapts on small screens",
-      "Images and text scale without breaking layout"
+      "Signup and Login forms with validation",
+      "JWT stored securely (in HttpOnly cookie or secure storage)",
+      "Authenticated routes for user account and order history",
+      "OAuth (e.g., Google) option integrated"
     ],
     "status": "completed",
-    "completed_at": "2025-10-03 22:48:50"
+    "completed_at": "2025-10-04 00:06:30"
   },
   {
     "id": 9,
-    "title": "Smooth Scrolling and Interaction Enhancements",
-    "description": "Add smooth scrolling, hover transitions, and button animations for better user experience.",
+    "title": "Create User Account and Profile Management",
+    "description": "Enable users to view and edit their profile information, addresses, and payment methods.",
     "acceptance_criteria": [
-      "Smooth scroll behavior added via CSS or JS",
-      "Hover and focus states defined for interactive elements",
-      "Subtle animations improve UX without performance issues"
+      "Profile page displays user info, address, and payment methods",
+      "Editable fields with validation",
+      "Profile updates persisted to backend",
+      "UI confirms successful updates"
     ],
     "status": "completed",
-    "completed_at": "2025-10-03 22:49:04"
+    "completed_at": "2025-10-04 00:06:39"
   },
   {
     "id": 10,
-    "title": "SEO Optimization",
-    "description": "Add proper metadata, headings, and alt text for SEO-friendly structure.",
+    "title": "Implement Shopping Cart and Checkout Flow",
+    "description": "Develop a complete shopping cart and checkout process with discount codes and payment integration.",
     "acceptance_criteria": [
-      "Each page/section has appropriate <title>, meta description, and keywords",
-      "Images include alt attributes",
-      "Semantic HTML5 tags (header, main, section, footer) used correctly"
+      "Cart page shows added items with quantity controls",
+      "Discount code input and validation supported",
+      "Checkout form captures billing/shipping details",
+      "Stripe or PayPal integrated for payments",
+      "Order confirmation and invoice generation after payment"
     ],
     "status": "completed",
-    "completed_at": "2025-10-03 22:49:17"
+    "completed_at": "2025-10-04 00:06:57"
   },
   {
     "id": 11,
-    "title": "Testing and Quality Assurance",
-    "description": "Test website functionality, responsiveness, and accessibility across browsers and devices.",
+    "title": "Build Order History Page",
+    "description": "Provide users with a list of past orders including order status and details.",
     "acceptance_criteria": [
-      "All links and anchors function correctly",
-      "Form validations work as intended",
-      "Layout consistent in Chrome, Firefox, Safari, and mobile browsers",
-      "Accessibility audit passes basic WCAG checks"
+      "Orders fetched from API and displayed in a list",
+      "Each order includes date, items, total, and status",
+      "Users can download invoices",
+      "Empty state handled gracefully"
     ],
     "status": "completed",
-    "completed_at": "2025-10-03 22:49:33"
+    "completed_at": "2025-10-04 00:07:08"
   },
   {
     "id": 12,
-    "title": "Deployment Setup",
-    "description": "Deploy the site to Vercel, Netlify, or GitHub Pages.",
+    "title": "Implement Reviews and Ratings System",
+    "description": "Allow users to submit and view reviews with a star rating system.",
     "acceptance_criteria": [
-      "Build folder or static site hosted on chosen platform",
-      "Deployment URL accessible publicly",
-      "Basic CI/CD or auto-deploy configured via Git"
+      "Users can leave reviews only for purchased books",
+      "Star-based rating input implemented",
+      "Reviews moderated/admin approved before publishing",
+      "Average rating updated dynamically"
     ],
     "status": "completed",
-    "completed_at": "2025-10-03 22:49:44"
+    "completed_at": "2025-10-04 00:07:26"
   },
   {
     "id": 13,
-    "title": "Documentation and Maintenance",
-    "description": "Create a README file documenting project setup, folder structure, and deployment instructions.",
+    "title": "Develop Admin Dashboard",
+    "description": "Create an admin interface for managing books, orders, users, and promotions.",
     "acceptance_criteria": [
-      "README includes project overview, tech stack, and setup steps",
-      "Version control with clear commit messages",
-      "Future maintenance steps (content updates, bug fixes) outlined"
+      "Admin authentication required",
+      "CRUD operations for books (add/edit/delete)",
+      "Orders view with ability to mark as processed",
+      "User management and promotion creation",
+      "Sales and traffic analytics dashboard implemented"
     ],
     "status": "completed",
-    "completed_at": "2025-10-03 22:49:59"
+    "completed_at": "2025-10-04 00:07:42"
+  },
+  {
+    "id": 14,
+    "title": "Create About and Contact Pages",
+    "description": "Static informational pages for company background and customer contact form.",
+    "acceptance_criteria": [
+      "About page includes company info and mission",
+      "Contact page includes form for inquiries",
+      "Form submissions handled via backend endpoint",
+      "Responsive and consistent with overall design"
+    ],
+    "status": "completed",
+    "completed_at": "2025-10-04 00:07:54"
+  },
+  {
+    "id": 15,
+    "title": "Set up Backend API Integration",
+    "description": "Integrate frontend with Node.js/Express backend endpoints for authentication, products, orders, and reviews.",
+    "acceptance_criteria": [
+      "Axios or Fetch wrapper configured for API calls",
+      "Base API URL set via environment variables",
+      "Endpoints for books, users, orders, and reviews integrated",
+      "Error handling and loading states implemented"
+    ],
+    "status": "completed",
+    "completed_at": "2025-10-04 00:08:06"
+  },
+  {
+    "id": 16,
+    "title": "Implement Secure Payment Gateway (Stripe/PayPal)",
+    "description": "Integrate payment gateway for secure transactions.",
+    "acceptance_criteria": [
+      "Payment gateway SDK integrated",
+      "Secure client-side tokenization implemented",
+      "Server verifies and completes transactions",
+      "Failure and success states handled gracefully"
+    ],
+    "status": "completed",
+    "completed_at": "2025-10-04 00:08:21"
+  },
+  {
+    "id": 17,
+    "title": "Add SEO and Performance Optimizations",
+    "description": "Ensure the app is optimized for search engines and performance.",
+    "acceptance_criteria": [
+      "Meta tags and Open Graph data configured",
+      "Lazy loading for images and components",
+      "Lighthouse performance score above 90",
+      "Responsive and accessible design across devices"
+    ],
+    "status": "completed",
+    "completed_at": "2025-10-04 00:08:36"
+  },
+  {
+    "id": 18,
+    "title": "Containerize and Deploy Application",
+    "description": "Prepare Docker setup for both frontend and backend and deploy using AWS or Vercel.",
+    "acceptance_criteria": [
+      "Dockerfile created for frontend build",
+      "Environment variables configured for production",
+      "CDN (CloudFront) integrated for static assets",
+      "Application deployed and accessible via HTTPS"
+    ],
+    "status": "completed",
+    "completed_at": "2025-10-04 00:08:49"
+  },
+  {
+    "id": 19,
+    "title": "Implement Analytics and Error Monitoring",
+    "description": "Add analytics tracking and error logging for operational visibility.",
+    "acceptance_criteria": [
+      "Google Analytics or equivalent integrated",
+      "Error boundary components implemented in React",
+      "Sentry or similar tool for error tracking configured",
+      "Admin dashboard displays key performance metrics"
+    ],
+    "status": "completed",
+    "completed_at": "2025-10-04 00:09:04"
+  },
+  {
+    "id": 20,
+    "title": "Write Test Suites and Documentation",
+    "description": "Ensure code reliability with unit, integration, and end-to-end tests, and provide developer documentation.",
+    "acceptance_criteria": [
+      "Jest and React Testing Library configured",
+      "Critical components, reducers, and hooks tested",
+      "Cypress used for E2E tests covering main user flows",
+      "README and developer setup documentation complete"
+    ],
+    "status": "completed",
+    "completed_at": "2025-10-04 00:09:23"
   }
 ]

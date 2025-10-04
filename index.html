@@ -1,103 +1,15 @@
-<!DOCTYPE html>
-
+<!doctype html>
 <html lang="en">
-<head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="Personal Portfolio Website — A responsive portfolio showcasing [Your Name]'s web development, design, and creative projects." name="description"/>
-<meta content="Portfolio, Web Developer, Designer, JavaScript, React, Projects, Contact" name="keywords"/>
-<meta content="[Your Name]" name="author"/>
-<title>[Your Name] | Web Developer Portfolio</title>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&amp;family=Roboto&amp;display=swap" rel="stylesheet"/>
-<link href="css/style.css" rel="stylesheet"/>
-</head>
-<body>
-<header>
-<nav aria-label="Main Navigation" class="navbar">
-<div class="logo">[Your Name]</div>
-<button aria-label="Toggle navigation menu" class="menu-toggle" id="mobile-menu">
-          ☰
-        </button>
-<ul class="nav-links">
-<li><a class="nav-link active" href="#home">Home</a></li>
-<li><a class="nav-link" href="#about">About</a></li>
-<li><a class="nav-link" href="#projects">Projects</a></li>
-<li><a class="nav-link" href="#contact">Contact</a></li>
-</ul>
-</nav>
-</header>
-<main>
-<section aria-labelledby="hero-heading" class="hero" id="home">
-<div class="hero-content">
-<h1 id="hero-heading">Hi, I'm [Your Name]</h1>
-<h2 class="subheadline">A [Your Role or Profession]</h2>
-<a class="cta-button" href="#projects">View My Work</a>
-</div>
-<img alt="Portrait of [Your Name]" class="hero-image" src="images/profile-placeholder.jpg"/>
-</section>
-<section aria-labelledby="about-heading" class="about" id="about">
-<div class="about-container">
-<div class="about-text">
-<h2 id="about-heading">About Me</h2>
-<p>
-              Brief professional introduction highlighting background, experience, and interests.
-            </p>
-</div>
-<div class="skills-list">
-<h3>Skills</h3>
-<ul>
-<li><span class="skill-badge">💻 Web Development</span></li>
-<li><span class="skill-badge">🎨 UI/UX Design</span></li>
-<li><span class="skill-badge">📜 JavaScript</span></li>
-<li><span class="skill-badge">⚛️ React</span></li>
-</ul>
-</div>
-</div>
-</section>
-<section aria-labelledby="projects-heading" class="projects" id="projects">
-<h2 id="projects-heading">Projects</h2>
-<div class="project-grid">
-<article class="project-card">
-<img alt="Screenshot of Project One" class="project-image" src="images/project1-placeholder.jpg"/>
-<div class="project-content">
-<h3>Project One</h3>
-<p>Short summary of the project, tools used, and your role.</p>
-<a aria-label="View Project One" class="project-link" href="#" rel="noopener noreferrer" target="_blank">View Project</a>
-</div>
-</article>
-<article class="project-card">
-<img alt="Screenshot of Project Two" class="project-image" src="images/project2-placeholder.jpg"/>
-<div class="project-content">
-<h3>Project Two</h3>
-<p>Short summary of the project, tools used, and your role.</p>
-<a aria-label="View Project Two" class="project-link" href="#" rel="noopener noreferrer" target="_blank">View Project</a>
-</div>
-</article>
-</div>
-</section>
-<section aria-labelledby="contact-heading" class="contact" id="contact">
-<h2 id="contact-heading">Contact Me</h2>
-<p>Visitors can reach out using the form or social links.</p>
-<form class="contact-form" id="contact-form" novalidate="">
-<label class="visually-hidden" for="name">Name</label>
-<input id="name" name="name" placeholder="Your Name" required="" type="text"/>
-<label class="visually-hidden" for="email">Email</label>
-<input id="email" name="email" placeholder="Your Email" required="" type="email"/>
-<label class="visually-hidden" for="message">Message</label>
-<textarea id="message" name="message" placeholder="Your Message" required="" rows="5"></textarea>
-<button type="submit">Send Message</button>
-<p class="form-status" id="form-status"></p>
-</form>
-<div class="social-links">
-<a aria-label="LinkedIn Profile" href="#" rel="noopener noreferrer" target="_blank">LinkedIn</a>
-<a aria-label="GitHub Profile" href="#" rel="noopener noreferrer" target="_blank">GitHub</a>
-<a aria-label="Twitter Profile" href="#" rel="noopener noreferrer" target="_blank">Twitter</a>
-</div>
-</section>
-</main>
-<footer>
-<p>© <span id="year"></span> [Your Name]. All rights reserved.</p>
-</footer>
-<script src="js/main.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>

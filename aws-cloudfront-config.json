@@ -1,0 +1,35 @@
+{
+  "Comment": "BookHaven CloudFront Distribution",
+  "Origins": [
+    {
+      "Id": "bookhaven-origin",
+      "DomainName": "bookhaven-bucket.s3.amazonaws.com",
+      "S3OriginConfig": {
+        "OriginAccessIdentity": ""
+      }
+    }
+  ],
+  "DefaultCacheBehavior": {
+    "TargetOriginId": "bookhaven-origin",
+    "ViewerProtocolPolicy": "redirect-to-https",
+    "AllowedMethods": ["GET", "HEAD", "OPTIONS"],
+    "CachedMethods": ["GET", "HEAD"],
+    "Compress": true,
+    "ForwardedValues": {
+      "QueryString": false,
+      "Cookies": { "Forward": "none" }
+    },
+    "MinTTL": 0,
+    "DefaultTTL": 86400,
+    "MaxTTL": 31536000
+  },
+  "ViewerCertificate": {
+    "CloudFrontDefaultCertificate": false,
+    "ACMCertificateArn": "arn:aws:acm:us-east-1:123456789012:certificate/your-cert-id",
+    "SSLSupportMethod": "sni-only",
+    "MinimumProtocolVersion": "TLSv1.2_2021"
+  },
+  "Enabled": true,
+  "HttpVersion": "http2",
+  "IsIPV6Enabled": true
+}

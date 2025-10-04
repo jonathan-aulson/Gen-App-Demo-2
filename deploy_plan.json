@@ -1,13 +1,14 @@
 [
   {
     "id": 1,
-    "title": "Flatten app to root",
-    "description": "Ensure index.html and assets are in repo root",
+    "title": "Prepare React repo",
+    "description": "Ensure React scaffold and Actions workflow exist",
     "acceptance_criteria": [
-      "index.html exists in repo root"
+      "package.json exists",
+      ".github/workflows/pages.yml exists"
     ],
     "status": "completed",
-    "completed_at": "2025-10-03 22:51:22"
+    "completed_at": "2025-10-04 00:12:10"
   },
   {
     "id": 2,
@@ -42,6 +43,16 @@
   },
   {
     "id": 5,
+    "title": "Enable Pages via Actions",
+    "description": "Configure Pages to use Actions build",
+    "acceptance_criteria": [
+      "Pages build_type set to workflow"
+    ],
+    "status": "pending",
+    "completed_at": null
+  },
+  {
+    "id": 6,
     "title": "Wait for deployment (if applicable)",
     "description": "Poll URL until live",
     "acceptance_criteria": [

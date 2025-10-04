@@ -1,122 +1,167 @@
 ```markdown
-# Personal Portfolio Website
+# 📚 BookHaven
 
-A responsive web application that showcases a professional portfolio — introducing the individual, highlighting their work, and providing an easy way for visitors to get in touch.
-
----
-
-## ✨ Features
-
-- **Hero section** with name, tagline, and call-to-action  
-- **About Me section** with biography and skills overview  
-- **Projects gallery** with images, descriptions, and links to demos or repositories  
-- **Contact form** with validation and email integration  
-- **Responsive design** for mobile, tablet, and desktop  
-- **Smooth scrolling and navigation menu**  
-- **SEO-friendly** metadata and structure  
+**BookHaven** is an e-commerce web application that allows users to browse, search, and purchase books online. It provides personalized recommendations, user accounts, secure checkout, and an admin dashboard for inventory and order management.
 
 ---
 
-## 🧱 Stack
+## 📝 Description
 
-This project is implemented using **basic web technologies** and deployed via **GitHub Pages**.
+BookHaven offers a complete online bookstore experience with intuitive browsing, advanced filtering, user reviews, and a secure checkout system. It’s built with a modern frontend (React + TypeScript + Vite + Tailwind CSS) and a Node.js backend, designed for scalability and responsive performance.
 
-- **Frontend:** HTML5, CSS3, JavaScript  
-- **Backend:** *(Optional)* Node.js with Express for handling contact form submissions  
-- **Database:** None (or lightweight NoSQL such as MongoDB if saving messages)  
-- **Deployment:** GitHub Pages (alternatives: Vercel, Netlify)
+---
+
+## 🚀 Features
+
+### 🔍 Browsing & Search
+- Search bar with filters (genre, author, price, rating)
+- Category browsing (fiction, non-fiction, academic, etc.)
+- Sorting by popularity, release date, or price
+
+### 👤 User Accounts
+- Registration and login
+- Profile management (addresses, payment methods)
+- Order history and wishlists
+
+### 🛒 Shopping Cart & Checkout
+- Add/remove/update items in the cart
+- Discount codes and promotions
+- Secure payment gateway (Stripe, PayPal)
+- Order confirmation and invoice generation
+
+### 📖 Book Detail Page
+- Book cover, title, author, price, description
+- Average rating and customer reviews
+- Related/recommended books
+
+### ⭐ Reviews & Ratings
+- User-submitted reviews with star rating
+- Moderation/admin approval for reviews
+
+### 🧭 Admin Dashboard
+- Manage inventory (add/edit/delete books)
+- View and process orders
+- Manage users and promotions
+- Sales and traffic analytics
+
+---
+
+## 🧱 Tech Stack
+
+| Layer | Technology |
+|-------|-------------|
+| **Frontend** | React + TypeScript + Vite |
+| **Styling** | Tailwind CSS |
+| **State Management** | Redux Toolkit or Context API |
+| **Backend** | Node.js (Express.js) |
+| **Database** | PostgreSQL or MongoDB |
+| **Authentication** | JWT-based with optional OAuth |
+| **CI/CD** | GitHub Actions (build and deploy to GitHub Pages) |
+| **Deployment** | Docker containers on AWS or Vercel |
+| **Payment Gateway** | Stripe or PayPal |
+| **CDN** | CloudFront or similar |
 
 ---
 
 ## ⚙️ Setup
 
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/yourusername/personal-portfolio.git
-   cd personal-portfolio
-   ```
+### Prerequisites
+- Node.js (v18+)
+- npm or yarn
+- Git
 
-2. **Open locally**
-   - You can open `index.html` directly in your browser, or  
-   - Use a local server for development:
-     ```bash
-     npx serve
-     ```
+### Clone the Repository
+```bash
+git clone https://github.com/your-username/bookhaven.git
+cd bookhaven
+```
 
-3. **Optional: Configure contact form**
-   - Update contact form script to use [EmailJS](https://www.emailjs.com/) or a backend endpoint (e.g., Node.js + Nodemailer).
+### Install Dependencies
+```bash
+npm install
+```
 
-4. **Deploy to GitHub Pages**
-   - Push changes to your repository.
-   - In GitHub, go to **Settings → Pages → Source** and select the `main` branch, `/root` folder.
-   - Your site will be available at `https://yourusername.github.io/personal-portfolio/`.
+### Run Development Server
+```bash
+npm run dev
+```
+Open your browser and navigate to `http://localhost:5173`.
+
+### Build for Production
+```bash
+npm run build
+```
+
+### Preview Production Build
+```bash
+npm run preview
+```
 
 ---
 
-## 🚀 Usage
+## 💡 Usage
 
-- **Home Page:** Displays hero section with name, tagline, and navigation.  
-- **About Page:** Introduces you and lists your skills and experience.  
-- **Projects Page:** Showcases featured work with links to demos or repositories.  
-- **Contact Page:** Allows visitors to send messages or connect via social links.
-
-Customize the content in the HTML or React components (if using a framework) to reflect your personal details, project information, and links.
+1. **Browse books:** Use filters or categories to discover titles.
+2. **View book details:** See descriptions, reviews, and related books.
+3. **Add to cart:** Manage items and apply discount codes.
+4. **Checkout securely:** Complete purchases with integrated payment gateway.
+5. **Manage account:** Update profile, view orders, and track shipments.
+6. **Admin tools:** Add/edit books, manage orders, and view analytics.
 
 ---
 
-## 📁 File Structure
+## 📂 File Structure
 
 ```
-personal-portfolio/
-│
-├── index.html              # Main landing page (Home)
-├── about.html              # About section (if multi-page)
-├── projects.html           # Projects gallery
-├── contact.html            # Contact form section
-│
-├── /assets/
-│   ├── /images/            # Project images, profile photo
-│   ├── /icons/             # Icons and favicon
-│
-├── /css/
-│   └── style.css           # Main stylesheet
-│
-├── /js/
-│   └── main.js             # JavaScript functionality (scrolling, form validation)
-│
-├── /design/
-│   └── portfolio-design.fig # Figma design file (optional)
-│
+bookhaven/
+├── public/                 # Static assets
+├── src/
+│   ├── components/         # Reusable UI components
+│   ├── pages/              # Page-level components (Home, Catalog, Book Detail, etc.)
+│   ├── features/           # Redux slices or context modules
+│   ├── hooks/              # Custom React hooks
+│   ├── services/           # API calls and utilities
+│   ├── styles/             # Global and Tailwind styles
+│   ├── App.tsx             # Root component
+│   └── main.tsx            # Application entry point
+├── .github/
+│   └── workflows/
+│       └── build.yml       # GitHub Actions CI/CD for GitHub Pages
+├── package.json
+├── tsconfig.json
+├── vite.config.ts
 └── README.md
 ```
 
 ---
 
-## 🧰 Technologies
+## 🧰 Technologies Used
 
-| Category      | Tools / Libraries |
-|----------------|------------------|
-| **Frontend**   | HTML5, CSS3, JavaScript |
-| **Design**     | Figma (UI design and prototyping) |
-| **Version Control** | Git, GitHub |
-| **Email Integration** | EmailJS or Nodemailer |
-| **Deployment** | GitHub Pages, Vercel, or Netlify |
-
-**Design Style:** Modern, minimalistic, and clean  
-**Color Palette:** `#222222`, `#ffffff`, `#007acc`, `#f5f5f5`  
-**Typography:**  
-- Primary: *Poppins*, sans-serif  
-- Secondary: *Roboto*, sans-serif  
+- **Frontend:** React, TypeScript, Vite, Tailwind CSS  
+- **Backend:** Node.js, Express.js  
+- **Database:** PostgreSQL or MongoDB  
+- **Authentication:** JWT, OAuth  
+- **Payment Gateway:** Stripe or PayPal  
+- **CI/CD:** GitHub Actions  
+- **Deployment:** AWS / Vercel with Docker  
+- **Analytics:** Admin dashboard for sales and traffic insights  
 
 ---
 
-## 🪪 License
+## 🎨 Design Overview
+
+- **Style:** Modern, clean, and responsive  
+- **Color Scheme:** Neutral background with navy and gold accents  
+- **Layout:** Grid-based book listings, card-style components, sticky navigation bar, and responsive mobile design  
+
+---
+
+## 📄 License
 
 This project is licensed under the **MIT License**.  
-You are free to use, modify, and distribute this software with attribution.
+See the [LICENSE](LICENSE) file for details.
 
 ---
 
-**Author:** [Your Name]  
-**Live Demo:** [GitHub Pages URL or Custom Domain]
+**© 2024 BookHaven. All rights reserved.**
 ```
