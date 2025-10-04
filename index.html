@@ -4,106 +4,99 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Your Name - Portfolio</title>
-<meta content="Showcase of projects, experience, and contact information." name="description"/>
-<meta content="portfolio, developer, designer, projects, contact" name="keywords"/>
-<meta content="Your Name" name="author"/>
-<link href="css/main.css" rel="stylesheet"/>
+<meta content="Personal Portfolio Website — A responsive portfolio showcasing [Your Name]'s web development, design, and creative projects." name="description"/>
+<meta content="Portfolio, Web Developer, Designer, JavaScript, React, Projects, Contact" name="keywords"/>
+<meta content="[Your Name]" name="author"/>
+<title>[Your Name] | Web Developer Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&amp;family=Roboto&amp;display=swap" rel="stylesheet"/>
+<link href="css/style.css" rel="stylesheet"/>
 </head>
 <body>
 <header>
-<div class="logo">Your Name</div>
-<nav aria-label="Main navigation" id="navbar" role="navigation">
-<ul>
-<li><a class="nav-link active" href="#hero">Home</a></li>
-<li><a class="nav-link" href="#projects">Projects</a></li>
+<nav aria-label="Main Navigation" class="navbar">
+<div class="logo">[Your Name]</div>
+<button aria-label="Toggle navigation menu" class="menu-toggle" id="mobile-menu">
+          ☰
+        </button>
+<ul class="nav-links">
+<li><a class="nav-link active" href="#home">Home</a></li>
 <li><a class="nav-link" href="#about">About</a></li>
+<li><a class="nav-link" href="#projects">Projects</a></li>
 <li><a class="nav-link" href="#contact">Contact</a></li>
 </ul>
-<button aria-label="Toggle navigation menu" class="menu-toggle" id="menu-toggle">☰</button>
 </nav>
 </header>
-<main id="main-content" tabindex="-1">
-<section aria-labelledby="hero-heading" id="hero">
+<main>
+<section aria-labelledby="hero-heading" class="hero" id="home">
 <div class="hero-content">
-<div class="hero-text">
-<h1 id="hero-heading">Your Name</h1>
-<p class="tagline">Brief introduction highlighting who you are and what you do.</p>
-<button aria-label="View Projects section" class="cta-btn" id="cta-btn">View Projects</button>
+<h1 id="hero-heading">Hi, I'm [Your Name]</h1>
+<h2 class="subheadline">A [Your Role or Profession]</h2>
+<a class="cta-button" href="#projects">View My Work</a>
 </div>
-<div class="hero-image">
-<img alt="Professional headshot of Your Name" loading="lazy" src="images/profile.jpg"/>
-</div>
-</div>
+<img alt="Portrait of [Your Name]" class="hero-image" src="images/profile-placeholder.jpg"/>
 </section>
-<section aria-labelledby="about-heading" id="about">
+<section aria-labelledby="about-heading" class="about" id="about">
 <div class="about-container">
-<div class="about-image">
-<img alt="Your Name smiling in front of a neutral background" loading="lazy" src="images/profile.jpg"/>
-</div>
 <div class="about-text">
 <h2 id="about-heading">About Me</h2>
-<p>Detailed bio with education, experience, and key skills. I am a passionate developer focused on creating clean, modern, and user-friendly digital experiences.</p>
+<p>
+              Brief professional introduction highlighting background, experience, and interests.
+            </p>
+</div>
+<div class="skills-list">
 <h3>Skills</h3>
-<ul class="skills-list">
-<li>HTML5 / CSS3</li>
-<li>JavaScript (ES6+)</li>
-<li>Responsive Design</li>
-<li>Git / GitHub</li>
+<ul>
+<li><span class="skill-badge">💻 Web Development</span></li>
+<li><span class="skill-badge">🎨 UI/UX Design</span></li>
+<li><span class="skill-badge">📜 JavaScript</span></li>
+<li><span class="skill-badge">⚛️ React</span></li>
 </ul>
-<a aria-label="Download resume in PDF format" class="resume-link" download="" href="assets/resume.pdf">Download Resume (PDF)</a>
 </div>
 </div>
 </section>
-<section aria-labelledby="projects-heading" id="projects">
-<h2 id="projects-heading">Projects Gallery</h2>
-<div class="filter-container">
-<button class="filter-btn active" data-category="all">All</button>
-<button class="filter-btn" data-category="web">Web</button>
-<button class="filter-btn" data-category="design">Design</button>
-</div>
-<div class="projects-grid">
-<article class="project-card" data-category="web">
-<img alt="Screenshot of Project One website interface" loading="lazy" src="images/project1.jpg"/>
+<section aria-labelledby="projects-heading" class="projects" id="projects">
+<h2 id="projects-heading">Projects</h2>
+<div class="project-grid">
+<article class="project-card">
+<img alt="Screenshot of Project One" class="project-image" src="images/project1-placeholder.jpg"/>
+<div class="project-content">
 <h3>Project One</h3>
-<p>A responsive website built using HTML, CSS, and JavaScript.</p>
-<div class="project-links">
-<a aria-label="View Project One live demo" href="#" rel="noopener" target="_blank">Live Demo</a>
-<a aria-label="View Project One GitHub repository" href="#" rel="noopener" target="_blank">GitHub</a>
+<p>Short summary of the project, tools used, and your role.</p>
+<a aria-label="View Project One" class="project-link" href="#" rel="noopener noreferrer" target="_blank">View Project</a>
+</div>
+</article>
+<article class="project-card">
+<img alt="Screenshot of Project Two" class="project-image" src="images/project2-placeholder.jpg"/>
+<div class="project-content">
+<h3>Project Two</h3>
+<p>Short summary of the project, tools used, and your role.</p>
+<a aria-label="View Project Two" class="project-link" href="#" rel="noopener noreferrer" target="_blank">View Project</a>
 </div>
 </article>
 </div>
 </section>
-<section aria-labelledby="contact-heading" id="contact">
+<section aria-labelledby="contact-heading" class="contact" id="contact">
 <h2 id="contact-heading">Contact Me</h2>
-<p>If you'd like to get in touch, please fill out the form below.</p>
-<form aria-describedby="form-message" id="contact-form" novalidate="">
-<div class="form-group">
-<label for="name">Name</label>
-<input aria-required="true" id="name" name="name" placeholder="Your full name" required="" type="text"/>
-</div>
-<div class="form-group">
-<label for="email">Email</label>
-<input aria-required="true" id="email" name="email" placeholder="Your email address" required="" type="email"/>
-</div>
-<div class="form-group">
-<label for="message">Message</label>
-<textarea aria-required="true" id="message" name="message" placeholder="Write your message here..." required=""></textarea>
-</div>
-<button class="submit-btn" type="submit">Send Message</button>
-<p class="form-message" id="form-message" role="alert"></p>
+<p>Visitors can reach out using the form or social links.</p>
+<form class="contact-form" id="contact-form" novalidate="">
+<label class="visually-hidden" for="name">Name</label>
+<input id="name" name="name" placeholder="Your Name" required="" type="text"/>
+<label class="visually-hidden" for="email">Email</label>
+<input id="email" name="email" placeholder="Your Email" required="" type="email"/>
+<label class="visually-hidden" for="message">Message</label>
+<textarea id="message" name="message" placeholder="Your Message" required="" rows="5"></textarea>
+<button type="submit">Send Message</button>
+<p class="form-status" id="form-status"></p>
 </form>
+<div class="social-links">
+<a aria-label="LinkedIn Profile" href="#" rel="noopener noreferrer" target="_blank">LinkedIn</a>
+<a aria-label="GitHub Profile" href="#" rel="noopener noreferrer" target="_blank">GitHub</a>
+<a aria-label="Twitter Profile" href="#" rel="noopener noreferrer" target="_blank">Twitter</a>
+</div>
 </section>
 </main>
-<footer role="contentinfo">
-<div class="footer-content">
-<p>© <span id="year"></span> Your Name</p>
-<div class="social-links">
-<a aria-label="GitHub profile" href="https://github.com/yourusername" rel="noopener" target="_blank"><img alt="GitHub icon" src="images/github-icon.svg"/></a>
-<a aria-label="LinkedIn profile" href="https://linkedin.com/in/yourusername" rel="noopener" target="_blank"><img alt="LinkedIn icon" src="images/linkedin-icon.svg"/></a>
-<a aria-label="Twitter profile" href="https://twitter.com/yourusername" rel="noopener" target="_blank"><img alt="Twitter icon" src="images/twitter-icon.svg"/></a>
-</div>
-</div>
+<footer>
+<p>© <span id="year"></span> [Your Name]. All rights reserved.</p>
 </footer>
 <script src="js/main.js"></script>
 </body>

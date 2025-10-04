@@ -1,125 +1,112 @@
 {
-  "app_name": "PersonalPortfolio",
-  "description": "A responsive personal portfolio website showcasing professional information, projects, and a means for visitors to get in touch.",
-  "features": {
-    "hero_section": {
-      "description": "Prominent introduction area with name, tagline, and call-to-action button.",
-      "elements": [
-        "Name/Title",
-        "Tagline or short description",
-        "Profile image or background image",
-        "Call-to-action button (e.g., View Projects / Contact Me)"
-      ]
-    },
-    "about_me": {
-      "description": "Section describing the individual, skills, experience, and background.",
-      "elements": [
-        "Profile picture",
-        "Bio",
-        "Skills summary",
-        "Downloadable resume link"
-      ]
-    },
-    "projects_gallery": {
-      "description": "Showcase of projects with thumbnails, descriptions, and links.",
-      "elements": [
-        "Project cards with image, title, short summary",
-        "Links to live demos or GitHub repositories",
-        "Filtering or categorization options"
-      ]
-    },
-    "contact_form": {
-      "description": "Form for visitors to send inquiries or messages.",
-      "elements": [
-        "Name field",
-        "Email field",
-        "Message textarea",
-        "Submit button",
-        "Form validation and success/error messages"
-      ]
-    }
-  },
-  "pages": [
-    {
-      "name": "Home",
+  "app_name": "Personal Portfolio Website",
+  "description": "A responsive web application that showcases a professional portfolio, introducing the individual, their work, and providing an easy way for visitors to get in touch.",
+  "features": [
+    "Hero section with name, tagline, and call-to-action",
+    "About Me section with biography and skills overview",
+    "Projects gallery with images, descriptions, and links to demos or repositories",
+    "Contact form with validation and email integration",
+    "Responsive design for mobile, tablet, and desktop",
+    "Smooth scrolling and navigation menu",
+    "SEO-friendly metadata and structure"
+  ],
+  "pages": {
+    "Home": {
       "sections": [
         "Hero Section",
-        "About Me Preview",
-        "Featured Projects",
-        "Contact CTA"
+        "Navigation Bar"
       ]
     },
-    {
-      "name": "Projects",
+    "About": {
       "sections": [
-        "Projects Gallery"
+        "Profile Overview",
+        "Skills and Experience"
       ]
     },
-    {
-      "name": "About",
+    "Projects": {
       "sections": [
-        "About Me Details",
-        "Skills",
-        "Resume Download"
+        "Gallery of Featured Projects",
+        "Project Details Modal or Links"
       ]
     },
-    {
-      "name": "Contact",
+    "Contact": {
       "sections": [
         "Contact Form",
         "Social Media Links"
       ]
     }
-  ],
+  },
   "design": {
-    "style": "Clean, modern, and responsive design with consistent color palette and typography.",
-    "layout": "Single-page scroll or multi-section layout with smooth navigation.",
-    "color_scheme": "Light background with accent color for highlights (e.g., blue or teal).",
-    "fonts": [
-      "Sans-serif heading font",
-      "Readable body text font"
+    "style": "Modern, minimalistic, and clean",
+    "color_palette": [
+      "#222222",
+      "#ffffff",
+      "#007acc",
+      "#f5f5f5"
     ],
-    "responsive": true,
-    "accessibility": "WCAG 2.1 AA compliant color contrast and keyboard navigation support."
+    "typography": {
+      "primary_font": "Poppins, sans-serif",
+      "secondary_font": "Roboto, sans-serif"
+    },
+    "layout": "Single-page or multi-section scroll layout with consistent spacing and visual hierarchy"
   },
   "tech_stack": {
     "frontend": [
       "HTML5",
-      "CSS3 or TailwindCSS",
-      "JavaScript (Vanilla or React)"
+      "CSS3",
+      "JavaScript",
+      "React or Next.js"
     ],
     "backend": [
-      "Node.js with Express (optional, for handling form submissions)"
+      "Node.js with Express (optional, for contact form handling)"
+    ],
+    "database": [
+      "None or lightweight NoSQL (e.g., MongoDB if saving messages)"
     ],
     "deployment": [
-      "Netlify, Vercel, or GitHub Pages"
+      "Vercel",
+      "Netlify",
+      "GitHub Pages"
     ],
     "tools": [
-      "Git/GitHub for version control",
-      "EmailJS or serverless function for contact form"
+      "Git",
+      "Figma for UI design",
+      "EmailJS or Nodemailer for form submission"
     ]
   },
   "content": {
-    "text": {
-      "hero": "Brief introduction highlighting who you are and what you do.",
-      "about": "Detailed bio with education, experience, and key skills.",
-      "projects": "List of completed works, each with a short description and links.",
-      "contact": "Invitation to reach out along with contact form instructions."
+    "hero": {
+      "headline": "Hi, I'm [Your Name]",
+      "subheadline": "A [Your Role or Profession]",
+      "cta": "View My Work"
     },
-    "images": {
-      "hero_background": "High-quality personal or abstract image.",
-      "profile": "Professional headshot or avatar.",
-      "project_thumbnails": "Screenshots or mockups of each project."
+    "about": {
+      "bio": "Brief professional introduction highlighting background, experience, and interests.",
+      "skills": [
+        "Web Development",
+        "UI/UX Design",
+        "JavaScript",
+        "React"
+      ]
     },
-    "metadata": {
-      "title": "Your Name - Portfolio",
-      "description": "Showcase of projects, experience, and contact information.",
-      "keywords": [
-        "portfolio",
-        "developer",
-        "designer",
-        "projects",
-        "contact"
+    "projects": [
+      {
+        "title": "Project One",
+        "description": "Short summary of the project, tools used, and your role.",
+        "link": "#"
+      },
+      {
+        "title": "Project Two",
+        "description": "Short summary of the project, tools used, and your role.",
+        "link": "#"
+      }
+    ],
+    "contact": {
+      "instructions": "Visitors can reach out using the form or social links.",
+      "fields": [
+        "Name",
+        "Email",
+        "Message"
       ]
     }
   }

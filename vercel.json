@@ -1,9 +1,12 @@
 {
   "version": 2,
+  "name": "personal-portfolio-website",
   "builds": [
-    { "src": "index.html", "use": "@vercel/static" }
+    { "src": "index.html", "use": "@vercel/static" },
+    { "src": "css/style.css", "use": "@vercel/static" },
+    { "src": "js/main.js", "use": "@vercel/static" }
   ],
   "routes": [
-    { "src": "/(.*)", "dest": "/index.html" }
+    { "src": "/.*", "dest": "/index.html" }
   ]
 }

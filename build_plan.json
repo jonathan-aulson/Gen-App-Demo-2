@@ -2,143 +2,161 @@
   {
     "id": 1,
     "title": "Project Setup",
-    "description": "Initialize the project structure for PersonalPortfolio using basic HTML, CSS, and JS. Create folders for assets, images, styles, scripts, and pages.",
+    "description": "Initialize the project structure using basic HTML, CSS, and JavaScript. Create folders for assets (images, CSS, JS) and pages if needed.",
     "acceptance_criteria": [
-      "Project folder contains index.html, /assets, /images, /styles, /scripts directories.",
-      "Basic HTML boilerplate with metadata (title, description, keywords) added.",
-      "Git repository initialized for version control."
+      "Project root contains index.html, /css, /js, and /images directories",
+      "Basic HTML boilerplate is set up in index.html",
+      "All assets and scripts are correctly linked"
     ],
     "status": "completed",
-    "completed_at": "2025-10-03 19:45:24"
+    "completed_at": "2025-10-03 22:47:17"
   },
   {
     "id": 2,
-    "title": "Global Layout and Navigation",
-    "description": "Create a responsive layout with header, navigation bar, main content area, and footer. Ensure smooth scrolling and navigation between sections/pages.",
+    "title": "Design Planning",
+    "description": "Design layout and visual hierarchy based on provided color palette, typography, and modern minimalistic style.",
     "acceptance_criteria": [
-      "Header includes site logo or name and navigation links (Home, Projects, About, Contact).",
-      "Navigation links anchor correctly to sections or navigate between pages.",
-      "Responsive design for mobile, tablet, and desktop.",
-      "Active state highlighting for current section."
+      "Figma or wireframe mockup created for all sections",
+      "Color palette (#222222, #ffffff, #007acc, #f5f5f5) applied consistently",
+      "Fonts Poppins and Roboto imported via Google Fonts",
+      "Consistent spacing, clean layout, and clear visual hierarchy established"
     ],
     "status": "completed",
-    "completed_at": "2025-10-03 19:45:34"
+    "completed_at": "2025-10-03 22:47:34"
   },
   {
     "id": 3,
-    "title": "Hero Section Implementation",
-    "description": "Develop the hero section with name/title, tagline, profile/background image, and a call-to-action button.",
+    "title": "Navigation Bar Implementation",
+    "description": "Create a responsive navigation bar with links to Home, About, Projects, and Contact sections. Implement smooth scrolling behavior.",
     "acceptance_criteria": [
-      "Hero section is visually prominent and responsive.",
-      "Contains name/title, short tagline, and CTA button (e.g., 'View Projects').",
-      "Includes background or profile image with optimized loading.",
-      "CTA scrolls smoothly to projects section or navigates to Projects page."
+      "Navigation links scroll smoothly to their respective sections",
+      "Navbar remains visible and styled consistently across all viewports",
+      "Active section highlighting implemented"
     ],
     "status": "completed",
-    "completed_at": "2025-10-03 19:45:46"
+    "completed_at": "2025-10-03 22:47:47"
   },
   {
     "id": 4,
-    "title": "About Me Section",
-    "description": "Add section describing the individual\u2019s bio, skills, experience, and a downloadable resume link.",
+    "title": "Hero Section Development",
+    "description": "Implement a hero section introducing the individual with a name, tagline, and call-to-action button.",
     "acceptance_criteria": [
-      "Section includes profile picture, bio paragraph, and skills summary list.",
-      "Downloadable resume link provided (PDF format).",
-      "Layout adapts to mobile and desktop viewports.",
-      "Consistent typography and spacing per design guidelines."
+      "Displays headline, subheadline, and CTA button",
+      "CTA smoothly scrolls to Projects section",
+      "Content centered vertically and horizontally with modern layout"
     ],
     "status": "completed",
-    "completed_at": "2025-10-03 19:45:59"
+    "completed_at": "2025-10-03 22:47:57"
   },
   {
     "id": 5,
-    "title": "Projects Gallery Section",
-    "description": "Create a projects gallery to showcase project thumbnails, titles, short descriptions, and links to live demos or GitHub repositories.",
+    "title": "About Section Development",
+    "description": "Build the About section containing a professional bio and a list of key skills.",
     "acceptance_criteria": [
-      "Each project displayed as a card with image, title, description, and links.",
-      "Cards arranged in responsive grid layout.",
-      "Optional filtering or categorization implemented via JavaScript.",
-      "Hover effects or animations for interactivity."
+      "Includes short bio paragraph and skills list styled with icons or badges",
+      "Responsive layout for mobile and desktop",
+      "Readability and consistent typography maintained"
     ],
     "status": "completed",
-    "completed_at": "2025-10-03 19:46:11"
+    "completed_at": "2025-10-03 22:48:09"
   },
   {
     "id": 6,
-    "title": "Contact Form Section",
-    "description": "Implement a functional contact form allowing users to send messages with validation and success/error feedback.",
+    "title": "Projects Section Development",
+    "description": "Develop a gallery of featured projects with titles, descriptions, and links to demos or repositories.",
     "acceptance_criteria": [
-      "Form includes fields: Name, Email, Message, and Submit button.",
-      "Client-side validation for required fields and email format.",
-      "Success and error messages displayed clearly after submission.",
-      "Form submission handled via EmailJS or mock JS handler (no backend required)."
+      "Grid or card layout displays all project entries",
+      "Hover effects reveal additional project info or actions",
+      "Links open in new tabs and are accessible",
+      "Consistent spacing and alignment across items"
     ],
     "status": "completed",
-    "completed_at": "2025-10-03 19:46:25"
+    "completed_at": "2025-10-03 22:48:23"
   },
   {
     "id": 7,
-    "title": "Footer and Social Media Links",
-    "description": "Design and implement a footer containing copyright notice and social media links.",
+    "title": "Contact Section Development",
+    "description": "Implement a contact form with name, email, and message fields. Include validation and email integration using EmailJS or similar.",
     "acceptance_criteria": [
-      "Footer includes \u00a9 symbol with current year and name.",
-      "Social media icons (e.g., GitHub, LinkedIn, Twitter) link to external profiles.",
-      "Responsive layout and accessible link contrast maintained."
+      "Form fields include placeholders and validation (required fields, email format)",
+      "Form submission triggers EmailJS or a mock handler",
+      "Success and error messages displayed to the user",
+      "Social media links added below form"
     ],
     "status": "completed",
-    "completed_at": "2025-10-03 19:46:34"
+    "completed_at": "2025-10-03 22:48:36"
   },
   {
     "id": 8,
-    "title": "Accessibility and SEO Enhancements",
-    "description": "Ensure site meets WCAG 2.1 AA accessibility and SEO best practices.",
+    "title": "Responsive Design Implementation",
+    "description": "Enhance all sections for responsiveness across mobile, tablet, and desktop devices.",
     "acceptance_criteria": [
-      "All images include alt text.",
-      "Color contrast meets accessibility standards.",
-      "Keyboard navigation works across all interactive elements.",
-      "Meta tags (title, description, keywords) correctly set.",
-      "Semantic HTML tags used appropriately (header, main, section, footer)."
+      "All layouts adjust gracefully to viewport width changes",
+      "Navigation collapses or adapts on small screens",
+      "Images and text scale without breaking layout"
     ],
     "status": "completed",
-    "completed_at": "2025-10-03 19:46:46"
+    "completed_at": "2025-10-03 22:48:50"
   },
   {
     "id": 9,
-    "title": "Responsive Design and Styling",
-    "description": "Apply consistent color scheme, typography, and spacing across all sections using CSS or a minimal utility framework.",
+    "title": "Smooth Scrolling and Interaction Enhancements",
+    "description": "Add smooth scrolling, hover transitions, and button animations for better user experience.",
     "acceptance_criteria": [
-      "Color scheme matches light background with accent color (e.g., blue/teal).",
-      "Fonts: sans-serif for headings and readable body font.",
-      "Responsive breakpoints for common device sizes implemented.",
-      "Smooth scrolling and section spacing visually balanced."
+      "Smooth scroll behavior added via CSS or JS",
+      "Hover and focus states defined for interactive elements",
+      "Subtle animations improve UX without performance issues"
     ],
     "status": "completed",
-    "completed_at": "2025-10-03 19:47:02"
+    "completed_at": "2025-10-03 22:49:04"
   },
   {
     "id": 10,
-    "title": "Deployment Setup",
-    "description": "Prepare and deploy the site to a static hosting platform (Netlify, Vercel, or GitHub Pages).",
+    "title": "SEO Optimization",
+    "description": "Add proper metadata, headings, and alt text for SEO-friendly structure.",
     "acceptance_criteria": [
-      "Build folder structure works with chosen static host.",
-      "Deployment tested and accessible via public URL.",
-      "Contact form integration verified post-deployment.",
-      "README includes deployment instructions and project overview."
+      "Each page/section has appropriate <title>, meta description, and keywords",
+      "Images include alt attributes",
+      "Semantic HTML5 tags (header, main, section, footer) used correctly"
     ],
     "status": "completed",
-    "completed_at": "2025-10-03 19:47:13"
+    "completed_at": "2025-10-03 22:49:17"
   },
   {
     "id": 11,
-    "title": "Testing and Final Review",
-    "description": "Perform testing for responsiveness, accessibility, form functionality, and cross-browser compatibility.",
+    "title": "Testing and Quality Assurance",
+    "description": "Test website functionality, responsiveness, and accessibility across browsers and devices.",
     "acceptance_criteria": [
-      "Site tested on Chrome, Firefox, Edge, and mobile browsers.",
-      "All links and navigation verified to work correctly.",
-      "Form tested for various input scenarios.",
-      "All console errors resolved and performance optimized."
+      "All links and anchors function correctly",
+      "Form validations work as intended",
+      "Layout consistent in Chrome, Firefox, Safari, and mobile browsers",
+      "Accessibility audit passes basic WCAG checks"
     ],
     "status": "completed",
-    "completed_at": "2025-10-03 19:47:25"
+    "completed_at": "2025-10-03 22:49:33"
+  },
+  {
+    "id": 12,
+    "title": "Deployment Setup",
+    "description": "Deploy the site to Vercel, Netlify, or GitHub Pages.",
+    "acceptance_criteria": [
+      "Build folder or static site hosted on chosen platform",
+      "Deployment URL accessible publicly",
+      "Basic CI/CD or auto-deploy configured via Git"
+    ],
+    "status": "completed",
+    "completed_at": "2025-10-03 22:49:44"
+  },
+  {
+    "id": 13,
+    "title": "Documentation and Maintenance",
+    "description": "Create a README file documenting project setup, folder structure, and deployment instructions.",
+    "acceptance_criteria": [
+      "README includes project overview, tech stack, and setup steps",
+      "Version control with clear commit messages",
+      "Future maintenance steps (content updates, bug fixes) outlined"
+    ],
+    "status": "completed",
+    "completed_at": "2025-10-03 22:49:59"
   }
 ]

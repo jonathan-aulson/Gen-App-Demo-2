@@ -1323,7 +1323,7 @@ Include: Title/description, Features, Stack: {stack_section}, Setup, Usage, File
             subprocess.run(["git", "branch", "-M", "main"], check=True, capture_output=True, text=True)
             if allow_force_push:
                 print("   ⚠️  User opted to wipe repository: force pushing (with lease)...")
-                push = subprocess.run(["git", "push", "-u", "origin", "main", "--force-with-lease"], text=True, capture_output=True)
+                push = subprocess.run(["git", "push", "--force", "origin", "main"], text=True, capture_output=True)
             else:
                 push = subprocess.run(["git", "push", "-u", "origin", "main"], text=True, capture_output=True)
             if push.returncode != 0:
@@ -1378,6 +1378,35 @@ Include: Title/description, Features, Stack: {stack_section}, Setup, Usage, File
             ok = self._run_playwright_e2e(self.deployed_url)
             print("   ✅ Deployed E2E passed" if ok else "   ⚠️  Deployed E2E failed")
         return plan.is_complete()
+    def _get_pages_build_status(self, owner: str, repo: str, token: Optional[str]) -> Optional[str]:
+        """
+        Query GitHub Pages latest build status for owner/repo.
+        Returns one of: "building", "built", "errored", "pending", etc., or None on error.
+        Requires self.config.github_token or token passed in.
+        """
+        if not owner or not repo:
+            return None
+        tok = token or self.config.github_token
+        if not tok:
+            return None
+        url = f"https://api.github.com/repos/{owner}/{repo}/pages/builds/latest"
+        headers = {"Authorization": f"token {tok}", "Accept": "application/vnd.github.v3+json"}
+        try:
+            resp = requests.get(url, headers=headers, timeout=10)
+            if resp.status_code == 200:
+                data = resp.json()
+                # The API returns a build object with a `status` field
+                return data.get("status")
+            # 404 indicates no build yet
+            if resp.status_code == 404:
+                return None
+            # For other statuses, print debug info and return None
+            print(f"   ⚠️  GitHub Pages API returned {resp.status_code}: {resp.text[:400]}")
+            return None
+        except Exception as e:
+            print(f"   ⚠️  Error fetching Pages build status: {e}")
+            return None
+    
 
     # -------------
     # Runner
