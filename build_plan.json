@@ -1,0 +1,144 @@
+[
+  {
+    "id": 1,
+    "title": "Project Setup",
+    "description": "Initialize the project structure for PersonalPortfolio using basic HTML, CSS, and JS. Create folders for assets, images, styles, scripts, and pages.",
+    "acceptance_criteria": [
+      "Project folder contains index.html, /assets, /images, /styles, /scripts directories.",
+      "Basic HTML boilerplate with metadata (title, description, keywords) added.",
+      "Git repository initialized for version control."
+    ],
+    "status": "completed",
+    "completed_at": "2025-10-03 19:45:24"
+  },
+  {
+    "id": 2,
+    "title": "Global Layout and Navigation",
+    "description": "Create a responsive layout with header, navigation bar, main content area, and footer. Ensure smooth scrolling and navigation between sections/pages.",
+    "acceptance_criteria": [
+      "Header includes site logo or name and navigation links (Home, Projects, About, Contact).",
+      "Navigation links anchor correctly to sections or navigate between pages.",
+      "Responsive design for mobile, tablet, and desktop.",
+      "Active state highlighting for current section."
+    ],
+    "status": "completed",
+    "completed_at": "2025-10-03 19:45:34"
+  },
+  {
+    "id": 3,
+    "title": "Hero Section Implementation",
+    "description": "Develop the hero section with name/title, tagline, profile/background image, and a call-to-action button.",
+    "acceptance_criteria": [
+      "Hero section is visually prominent and responsive.",
+      "Contains name/title, short tagline, and CTA button (e.g., 'View Projects').",
+      "Includes background or profile image with optimized loading.",
+      "CTA scrolls smoothly to projects section or navigates to Projects page."
+    ],
+    "status": "completed",
+    "completed_at": "2025-10-03 19:45:46"
+  },
+  {
+    "id": 4,
+    "title": "About Me Section",
+    "description": "Add section describing the individual\u2019s bio, skills, experience, and a downloadable resume link.",
+    "acceptance_criteria": [
+      "Section includes profile picture, bio paragraph, and skills summary list.",
+      "Downloadable resume link provided (PDF format).",
+      "Layout adapts to mobile and desktop viewports.",
+      "Consistent typography and spacing per design guidelines."
+    ],
+    "status": "completed",
+    "completed_at": "2025-10-03 19:45:59"
+  },
+  {
+    "id": 5,
+    "title": "Projects Gallery Section",
+    "description": "Create a projects gallery to showcase project thumbnails, titles, short descriptions, and links to live demos or GitHub repositories.",
+    "acceptance_criteria": [
+      "Each project displayed as a card with image, title, description, and links.",
+      "Cards arranged in responsive grid layout.",
+      "Optional filtering or categorization implemented via JavaScript.",
+      "Hover effects or animations for interactivity."
+    ],
+    "status": "completed",
+    "completed_at": "2025-10-03 19:46:11"
+  },
+  {
+    "id": 6,
+    "title": "Contact Form Section",
+    "description": "Implement a functional contact form allowing users to send messages with validation and success/error feedback.",
+    "acceptance_criteria": [
+      "Form includes fields: Name, Email, Message, and Submit button.",
+      "Client-side validation for required fields and email format.",
+      "Success and error messages displayed clearly after submission.",
+      "Form submission handled via EmailJS or mock JS handler (no backend required)."
+    ],
+    "status": "completed",
+    "completed_at": "2025-10-03 19:46:25"
+  },
+  {
+    "id": 7,
+    "title": "Footer and Social Media Links",
+    "description": "Design and implement a footer containing copyright notice and social media links.",
+    "acceptance_criteria": [
+      "Footer includes \u00a9 symbol with current year and name.",
+      "Social media icons (e.g., GitHub, LinkedIn, Twitter) link to external profiles.",
+      "Responsive layout and accessible link contrast maintained."
+    ],
+    "status": "completed",
+    "completed_at": "2025-10-03 19:46:34"
+  },
+  {
+    "id": 8,
+    "title": "Accessibility and SEO Enhancements",
+    "description": "Ensure site meets WCAG 2.1 AA accessibility and SEO best practices.",
+    "acceptance_criteria": [
+      "All images include alt text.",
+      "Color contrast meets accessibility standards.",
+      "Keyboard navigation works across all interactive elements.",
+      "Meta tags (title, description, keywords) correctly set.",
+      "Semantic HTML tags used appropriately (header, main, section, footer)."
+    ],
+    "status": "completed",
+    "completed_at": "2025-10-03 19:46:46"
+  },
+  {
+    "id": 9,
+    "title": "Responsive Design and Styling",
+    "description": "Apply consistent color scheme, typography, and spacing across all sections using CSS or a minimal utility framework.",
+    "acceptance_criteria": [
+      "Color scheme matches light background with accent color (e.g., blue/teal).",
+      "Fonts: sans-serif for headings and readable body font.",
+      "Responsive breakpoints for common device sizes implemented.",
+      "Smooth scrolling and section spacing visually balanced."
+    ],
+    "status": "completed",
+    "completed_at": "2025-10-03 19:47:02"
+  },
+  {
+    "id": 10,
+    "title": "Deployment Setup",
+    "description": "Prepare and deploy the site to a static hosting platform (Netlify, Vercel, or GitHub Pages).",
+    "acceptance_criteria": [
+      "Build folder structure works with chosen static host.",
+      "Deployment tested and accessible via public URL.",
+      "Contact form integration verified post-deployment.",
+      "README includes deployment instructions and project overview."
+    ],
+    "status": "completed",
+    "completed_at": "2025-10-03 19:47:13"
+  },
+  {
+    "id": 11,
+    "title": "Testing and Final Review",
+    "description": "Perform testing for responsiveness, accessibility, form functionality, and cross-browser compatibility.",
+    "acceptance_criteria": [
+      "Site tested on Chrome, Firefox, Edge, and mobile browsers.",
+      "All links and navigation verified to work correctly.",
+      "Form tested for various input scenarios.",
+      "All console errors resolved and performance optimized."
+    ],
+    "status": "completed",
+    "completed_at": "2025-10-03 19:47:25"
+  }
+]

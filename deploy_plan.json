@@ -1,0 +1,53 @@
+[
+  {
+    "id": 1,
+    "title": "Flatten app to root",
+    "description": "Ensure index.html and assets are in repo root",
+    "acceptance_criteria": [
+      "index.html exists in repo root"
+    ],
+    "status": "completed",
+    "completed_at": "2025-10-03 22:35:38"
+  },
+  {
+    "id": 2,
+    "title": "Initialize Git repository",
+    "description": "Create local git repo and initial commit",
+    "acceptance_criteria": [
+      ".git exists",
+      "Files staged and committed"
+    ],
+    "status": "pending",
+    "completed_at": null
+  },
+  {
+    "id": 3,
+    "title": "Create/Verify GitHub repo",
+    "description": "Create or verify remote repo on GitHub",
+    "acceptance_criteria": [
+      "Remote repository ready"
+    ],
+    "status": "pending",
+    "completed_at": null
+  },
+  {
+    "id": 4,
+    "title": "Push to GitHub",
+    "description": "Push code to remote repository",
+    "acceptance_criteria": [
+      "Code pushed to main"
+    ],
+    "status": "pending",
+    "completed_at": null
+  },
+  {
+    "id": 5,
+    "title": "Wait for deployment (if applicable)",
+    "description": "Poll URL until live",
+    "acceptance_criteria": [
+      "Site returns HTTP 200"
+    ],
+    "status": "pending",
+    "completed_at": null
+  }
+]

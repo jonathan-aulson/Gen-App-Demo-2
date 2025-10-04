@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "title": "Create README.md",
+    "description": "Create comprehensive project documentation",
+    "acceptance_criteria": [
+      "README.md exists",
+      "Contains setup instructions",
+      "Contains features list"
+    ],
+    "status": "completed",
+    "completed_at": "2025-10-03 19:48:24"
+  }
+]

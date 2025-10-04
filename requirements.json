@@ -1,0 +1,126 @@
+{
+  "app_name": "PersonalPortfolio",
+  "description": "A responsive personal portfolio website showcasing professional information, projects, and a means for visitors to get in touch.",
+  "features": {
+    "hero_section": {
+      "description": "Prominent introduction area with name, tagline, and call-to-action button.",
+      "elements": [
+        "Name/Title",
+        "Tagline or short description",
+        "Profile image or background image",
+        "Call-to-action button (e.g., View Projects / Contact Me)"
+      ]
+    },
+    "about_me": {
+      "description": "Section describing the individual, skills, experience, and background.",
+      "elements": [
+        "Profile picture",
+        "Bio",
+        "Skills summary",
+        "Downloadable resume link"
+      ]
+    },
+    "projects_gallery": {
+      "description": "Showcase of projects with thumbnails, descriptions, and links.",
+      "elements": [
+        "Project cards with image, title, short summary",
+        "Links to live demos or GitHub repositories",
+        "Filtering or categorization options"
+      ]
+    },
+    "contact_form": {
+      "description": "Form for visitors to send inquiries or messages.",
+      "elements": [
+        "Name field",
+        "Email field",
+        "Message textarea",
+        "Submit button",
+        "Form validation and success/error messages"
+      ]
+    }
+  },
+  "pages": [
+    {
+      "name": "Home",
+      "sections": [
+        "Hero Section",
+        "About Me Preview",
+        "Featured Projects",
+        "Contact CTA"
+      ]
+    },
+    {
+      "name": "Projects",
+      "sections": [
+        "Projects Gallery"
+      ]
+    },
+    {
+      "name": "About",
+      "sections": [
+        "About Me Details",
+        "Skills",
+        "Resume Download"
+      ]
+    },
+    {
+      "name": "Contact",
+      "sections": [
+        "Contact Form",
+        "Social Media Links"
+      ]
+    }
+  ],
+  "design": {
+    "style": "Clean, modern, and responsive design with consistent color palette and typography.",
+    "layout": "Single-page scroll or multi-section layout with smooth navigation.",
+    "color_scheme": "Light background with accent color for highlights (e.g., blue or teal).",
+    "fonts": [
+      "Sans-serif heading font",
+      "Readable body text font"
+    ],
+    "responsive": true,
+    "accessibility": "WCAG 2.1 AA compliant color contrast and keyboard navigation support."
+  },
+  "tech_stack": {
+    "frontend": [
+      "HTML5",
+      "CSS3 or TailwindCSS",
+      "JavaScript (Vanilla or React)"
+    ],
+    "backend": [
+      "Node.js with Express (optional, for handling form submissions)"
+    ],
+    "deployment": [
+      "Netlify, Vercel, or GitHub Pages"
+    ],
+    "tools": [
+      "Git/GitHub for version control",
+      "EmailJS or serverless function for contact form"
+    ]
+  },
+  "content": {
+    "text": {
+      "hero": "Brief introduction highlighting who you are and what you do.",
+      "about": "Detailed bio with education, experience, and key skills.",
+      "projects": "List of completed works, each with a short description and links.",
+      "contact": "Invitation to reach out along with contact form instructions."
+    },
+    "images": {
+      "hero_background": "High-quality personal or abstract image.",
+      "profile": "Professional headshot or avatar.",
+      "project_thumbnails": "Screenshots or mockups of each project."
+    },
+    "metadata": {
+      "title": "Your Name - Portfolio",
+      "description": "Showcase of projects, experience, and contact information.",
+      "keywords": [
+        "portfolio",
+        "developer",
+        "designer",
+        "projects",
+        "contact"
+      ]
+    }
+  }
+}

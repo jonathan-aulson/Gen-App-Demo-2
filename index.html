@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Your Name - Portfolio</title>
+<meta content="Showcase of projects, experience, and contact information." name="description"/>
+<meta content="portfolio, developer, designer, projects, contact" name="keywords"/>
+<meta content="Your Name" name="author"/>
+<link href="css/main.css" rel="stylesheet"/>
+</head>
+<body>
+<header>
+<div class="logo">Your Name</div>
+<nav aria-label="Main navigation" id="navbar" role="navigation">
+<ul>
+<li><a class="nav-link active" href="#hero">Home</a></li>
+<li><a class="nav-link" href="#projects">Projects</a></li>
+<li><a class="nav-link" href="#about">About</a></li>
+<li><a class="nav-link" href="#contact">Contact</a></li>
+</ul>
+<button aria-label="Toggle navigation menu" class="menu-toggle" id="menu-toggle">☰</button>
+</nav>
+</header>
+<main id="main-content" tabindex="-1">
+<section aria-labelledby="hero-heading" id="hero">
+<div class="hero-content">
+<div class="hero-text">
+<h1 id="hero-heading">Your Name</h1>
+<p class="tagline">Brief introduction highlighting who you are and what you do.</p>
+<button aria-label="View Projects section" class="cta-btn" id="cta-btn">View Projects</button>
+</div>
+<div class="hero-image">
+<img alt="Professional headshot of Your Name" loading="lazy" src="images/profile.jpg"/>
+</div>
+</div>
+</section>
+<section aria-labelledby="about-heading" id="about">
+<div class="about-container">
+<div class="about-image">
+<img alt="Your Name smiling in front of a neutral background" loading="lazy" src="images/profile.jpg"/>
+</div>
+<div class="about-text">
+<h2 id="about-heading">About Me</h2>
+<p>Detailed bio with education, experience, and key skills. I am a passionate developer focused on creating clean, modern, and user-friendly digital experiences.</p>
+<h3>Skills</h3>
+<ul class="skills-list">
+<li>HTML5 / CSS3</li>
+<li>JavaScript (ES6+)</li>
+<li>Responsive Design</li>
+<li>Git / GitHub</li>
+</ul>
+<a aria-label="Download resume in PDF format" class="resume-link" download="" href="assets/resume.pdf">Download Resume (PDF)</a>
+</div>
+</div>
+</section>
+<section aria-labelledby="projects-heading" id="projects">
+<h2 id="projects-heading">Projects Gallery</h2>
+<div class="filter-container">
+<button class="filter-btn active" data-category="all">All</button>
+<button class="filter-btn" data-category="web">Web</button>
+<button class="filter-btn" data-category="design">Design</button>
+</div>
+<div class="projects-grid">
+<article class="project-card" data-category="web">
+<img alt="Screenshot of Project One website interface" loading="lazy" src="images/project1.jpg"/>
+<h3>Project One</h3>
+<p>A responsive website built using HTML, CSS, and JavaScript.</p>
+<div class="project-links">
+<a aria-label="View Project One live demo" href="#" rel="noopener" target="_blank">Live Demo</a>
+<a aria-label="View Project One GitHub repository" href="#" rel="noopener" target="_blank">GitHub</a>
+</div>
+</article>
+</div>
+</section>
+<section aria-labelledby="contact-heading" id="contact">
+<h2 id="contact-heading">Contact Me</h2>
+<p>If you'd like to get in touch, please fill out the form below.</p>
+<form aria-describedby="form-message" id="contact-form" novalidate="">
+<div class="form-group">
+<label for="name">Name</label>
+<input aria-required="true" id="name" name="name" placeholder="Your full name" required="" type="text"/>
+</div>
+<div class="form-group">
+<label for="email">Email</label>
+<input aria-required="true" id="email" name="email" placeholder="Your email address" required="" type="email"/>
+</div>
+<div class="form-group">
+<label for="message">Message</label>
+<textarea aria-required="true" id="message" name="message" placeholder="Write your message here..." required=""></textarea>
+</div>
+<button class="submit-btn" type="submit">Send Message</button>
+<p class="form-message" id="form-message" role="alert"></p>
+</form>
+</section>
+</main>
+<footer role="contentinfo">
+<div class="footer-content">
+<p>© <span id="year"></span> Your Name</p>
+<div class="social-links">
+<a aria-label="GitHub profile" href="https://github.com/yourusername" rel="noopener" target="_blank"><img alt="GitHub icon" src="images/github-icon.svg"/></a>
+<a aria-label="LinkedIn profile" href="https://linkedin.com/in/yourusername" rel="noopener" target="_blank"><img alt="LinkedIn icon" src="images/linkedin-icon.svg"/></a>
+<a aria-label="Twitter profile" href="https://twitter.com/yourusername" rel="noopener" target="_blank"><img alt="Twitter icon" src="images/twitter-icon.svg"/></a>
+</div>
+</div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>
